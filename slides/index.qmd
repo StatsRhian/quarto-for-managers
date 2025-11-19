@@ -1,0 +1,166 @@
+---
+title: The magic of automatic reporting ✨ 
+author: Rhian Davies
+format: 
+  revealjs: 
+    self-contained: true
+execute:
+    echo: true
+    eval: false
+---
+
+## Meet Maria
+
+
+::: columns
+::: {.column width="60%"}
+- Public Health analyst
+- Delivers monthly reports on NHS Workforce statistics
+- Uses Excel to analyse data
+- Uses Word to write branded reports
+:::
+
+::: {.column width="40%"}
+![](img/maria.svg){fig-alt="Cartoon of a woman smiling"}
+:::
+:::
+
+## Monthly Reports
+
+![](img/flow-1.png){fig-alt="Cartoon of a spreadsheet" fig-align="center"}
+
+## Monthly Reports
+
+![](img/flow-2.png){fig-alt="Cartoon of a spreadsheet, then a woman coding." fig-align="center"}
+
+## Monthly Reports
+
+![](img/flow-3.png){fig-alt="Cartoon of a spreadsheet, then a woman coding, and then a women designing a pie chart." fig-align="center"}
+
+## Monthly Reports
+
+![](img/flow-4.png){fig-alt="Cartoon of a spreadsheet, then a woman coding, and then a women designing a pie chart and finally a woman writing some notes." fig-align="center"}
+
+## Back to square one
+
+::: {.incremental}
+- The data was wrong - can you re-run the analysis?
+- Your manager loves it - can you do it for another region?
+- Next month - do it all again.
+:::
+
+
+# There must be a better way
+
+# Hello quarto 👋
+
+## What is quarto?
+
+![](img/quarto.jpg){fig-alt="The quarto logo: A circle cut into four quadrants next to the word quarto"}
+
+> An **open-source** scientific and technical **publishing** system
+
+## 
+
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](img/quarto-flow.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto."}
+
+## Example report
+
+![](img/ne-april.png)
+
+[statsrhian.github.io/example-quarto-report/example-report.html](https://statsrhian.github.io/example-quarto-report/example-report.html)
+
+## Template based-reports
+
+```{r}
+#| code-line-numbers: "1-8|6-8|2-3"
+---
+title: "NHS Workforce Statistics for `r params$ics_name`"
+subtitle: "Data for `r params$month_year`"
+author: "Maria Garcia"
+date: "2023-09-28"
+params:
+  ics_name: "North East and North Cumbria"
+  month_year: "April 2023"
+---
+```
+
+## Interweave text and code 🧶
+
+. . .
+
+__Read in the data__
+
+```{r}
+filename = glue("NHS Workforce Statistics, {params$month_year} England and Organisation.xlsx")
+```
+
+. . .
+
+ __Clean the data__
+
+```{r}
+#| code-line-numbers: "3"
+staff_group = 
+  staff_group |>
+  filter(`ICS name` == params$ics_name) |>
+  select(`Organisation name`, `Total`,
+         `HCHS Doctors`, `Nurses & health visitors`,
+         `Midwives`, `Ambulance staff`) 
+```
+
+. . . 
+
+__Add insight__
+
+```{r}
+The table below shows the total number of doctors and nurses for each organisation within `r params$ics_name`. We can see that the organisation with the most midwives is the `r pull(max_midwives, "Organisation name")` with `r round(max_midwives$Midwives)` staff.
+```
+
+## Re-run next month
+
+```{r}
+#| code-line-numbers: "8"
+---
+title: "NHS Workforce Statistics for `r params$ics_name`"
+subtitle: "Data for `r params$month_year`"
+author: "Maria Garcia"
+date: "2023-09-28"
+params:
+  ics_name: "North East and North Cumbria"
+  month_year: "May 2023"
+```
+
+##  {background-image="img/ne-may.png"}
+
+## Report a different region
+
+```{r}
+#| code-line-numbers: "7"
+---
+title: "NHS Workforce Statistics for `r params$ics_name`"
+subtitle: "Data for `r params$month_year`"
+author: "Maria Garcia"
+date: "2023-09-28"
+params:
+  ics_name: "Lancashire and South Cumbria"
+  month_year: "May 2023"
+```
+
+##  {background-image="img/nw-may.png"}
+
+## Maria is happy
+
+::: columns
+::: {.column width="60%"}
+- More reproducible workflow
+- Fewer mistakes
+- Spends less time formatting the reports manually 
+- Spends more time adding insight
+
+:::
+
+::: {.column width="40%"}
+![](img/maria.svg){fig-alt="Cartoon of a woman smiling"}
+:::
+:::

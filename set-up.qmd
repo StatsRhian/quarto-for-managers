@@ -1,0 +1,7 @@
+---
+title: "👩‍💻 Set up"
+---
+
+You do not need anything install on your computer to take part in this workshop. 
+
+There are some interactive bits which can be completed by [opening this binder]().

@@ -1,0 +1,29 @@
+---
+title: "👋 Welcome"
+---
+
+## Workshop outline
+
+Meet Maria, a public health analyst who produces monthly NHS workforce reports. She crunches data in Excel, writes reports in Word, and spends hours formatting tables and charts. When the data changes or her manager requests a new region, she has to start over again.
+
+In this hands-on workshop, we’ll show how Quarto and parameterised, template-based reporting can transform workflows like Maria’s. Participants will see how analysts can interweave text and code to produce reproducible, automated reports that are easier to update, reduce mistakes, and free up time for insight and decision-making.
+
+Through a short practical exercise, managers will get a glimpse of the technology, see its benefits in action, and understand how investing in reproducible reporting can improve efficiency, consistency, and the impact of analytical work across health and care teams.
+
+
+## Learning Objectives
+
+By the end of the session, attendees will 
+
+- understand the benefits of Quarto
+
+- have an understanding of if Quarto could help their team
+
+- have built their own basic report
+
+
+## Prerequisites
+
+This workshop is aimed at managers. 
+No prior coding or Quarto experience necessary at all.
+

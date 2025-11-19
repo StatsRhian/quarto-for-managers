@@ -1,0 +1,6 @@
+---
+title: "📚 Resources"
+---
+
+- [Download website](https://quarto.org/docs/get-started/)
+- [Quarto tutorials](https://quarto.org/docs/get-started/hello/jupyter.html)
