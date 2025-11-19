@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "📚 Resources",
+    "section": "",
+    "text": "Download website\nQuarto tutorials"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "👋 Welcome",
+    "section": "",
+    "text": "Meet Maria, a public health analyst who produces monthly NHS workforce reports. She crunches data in Excel, writes reports in Word, and spends hours formatting tables and charts. When the data changes or her manager requests a new region, she has to start over again.\nIn this hands-on workshop, we’ll show how Quarto and parameterised, template-based reporting can transform workflows like Maria’s. Participants will see how analysts can interweave text and code to produce reproducible, automated reports that are easier to update, reduce mistakes, and free up time for insight and decision-making.\nThrough a short practical exercise, managers will get a glimpse of the technology, see its benefits in action, and understand how investing in reproducible reporting can improve efficiency, consistency, and the impact of analytical work across health and care teams."
+  },
+  {
+    "objectID": "index.html#workshop-outline",
+    "href": "index.html#workshop-outline",
+    "title": "👋 Welcome",
+    "section": "",
+    "text": "Meet Maria, a public health analyst who produces monthly NHS workforce reports. She crunches data in Excel, writes reports in Word, and spends hours formatting tables and charts. When the data changes or her manager requests a new region, she has to start over again.\nIn this hands-on workshop, we’ll show how Quarto and parameterised, template-based reporting can transform workflows like Maria’s. Participants will see how analysts can interweave text and code to produce reproducible, automated reports that are easier to update, reduce mistakes, and free up time for insight and decision-making.\nThrough a short practical exercise, managers will get a glimpse of the technology, see its benefits in action, and understand how investing in reproducible reporting can improve efficiency, consistency, and the impact of analytical work across health and care teams."
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "👋 Welcome",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of the session, attendees will\n\nunderstand the benefits of Quarto\nhave an understanding of if Quarto could help their team\nhave built their own basic report"
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "👋 Welcome",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nThis workshop is aimed at managers. No prior coding or Quarto experience necessary at all."
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "👩‍🏫 Slides",
+    "section": "",
+    "text": "🔍 View full-size"
+  },
+  {
+    "objectID": "set-up.html",
+    "href": "set-up.html",
+    "title": "👩‍💻 Set up",
+    "section": "",
+    "text": "You do not need anything install on your computer to take part in this workshop.\nThere are some interactive bits which can be completed by opening this binder."
+  },
+  {
+    "objectID": "slides/index.html#meet-maria",
+    "href": "slides/index.html#meet-maria",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Meet Maria",
+    "text": "Meet Maria\n\n\n\nPublic Health analyst\nDelivers monthly reports on NHS Workforce statistics\nUses Excel to analyse data\nUses Word to write branded reports"
+  },
+  {
+    "objectID": "slides/index.html#monthly-reports",
+    "href": "slides/index.html#monthly-reports",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Monthly Reports",
+    "text": "Monthly Reports"
+  },
+  {
+    "objectID": "slides/index.html#monthly-reports-1",
+    "href": "slides/index.html#monthly-reports-1",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Monthly Reports",
+    "text": "Monthly Reports"
+  },
+  {
+    "objectID": "slides/index.html#monthly-reports-2",
+    "href": "slides/index.html#monthly-reports-2",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Monthly Reports",
+    "text": "Monthly Reports"
+  },
+  {
+    "objectID": "slides/index.html#monthly-reports-3",
+    "href": "slides/index.html#monthly-reports-3",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Monthly Reports",
+    "text": "Monthly Reports"
+  },
+  {
+    "objectID": "slides/index.html#back-to-square-one",
+    "href": "slides/index.html#back-to-square-one",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Back to square one",
+    "text": "Back to square one\n\nThe data was wrong - can you re-run the analysis?\nYour manager loves it - can you do it for another region?\nNext month - do it all again."
+  },
+  {
+    "objectID": "slides/index.html#what-is-quarto",
+    "href": "slides/index.html#what-is-quarto",
+    "title": "The magic of automatic reporting ✨",
+    "section": "What is quarto?",
+    "text": "What is quarto?\n\n\nAn open-source scientific and technical publishing system"
+  },
+  {
+    "objectID": "slides/index.html#section",
+    "href": "slides/index.html#section",
+    "title": "The magic of automatic reporting ✨",
+    "section": "",
+    "text": "Artwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "slides/index.html#example-report",
+    "href": "slides/index.html#example-report",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Example report",
+    "text": "Example report\n\nstatsrhian.github.io/example-quarto-report/example-report.html"
+  },
+  {
+    "objectID": "slides/index.html#template-based-reports",
+    "href": "slides/index.html#template-based-reports",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Template based-reports",
+    "text": "Template based-reports\n#| code-line-numbers: \"1-8|6-8|2-3\"\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"North East and North Cumbria\"\n  month_year: \"April 2023\"\n---"
+  },
+  {
+    "objectID": "slides/index.html#interweave-text-and-code",
+    "href": "slides/index.html#interweave-text-and-code",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Interweave text and code 🧶",
+    "text": "Interweave text and code 🧶\n\nRead in the data\nfilename = glue(\"NHS Workforce Statistics, {params$month_year} England and Organisation.xlsx\")\n\n\nClean the data\n#| code-line-numbers: \"3\"\nstaff_group = \n  staff_group |&gt;\n  filter(`ICS name` == params$ics_name) |&gt;\n  select(`Organisation name`, `Total`,\n         `HCHS Doctors`, `Nurses & health visitors`,\n         `Midwives`, `Ambulance staff`) \n\n\nAdd insight\nThe table below shows the total number of doctors and nurses for each organisation within `r params$ics_name`. We can see that the organisation with the most midwives is the `r pull(max_midwives, \"Organisation name\")` with `r round(max_midwives$Midwives)` staff."
+  },
+  {
+    "objectID": "slides/index.html#re-run-next-month",
+    "href": "slides/index.html#re-run-next-month",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Re-run next month",
+    "text": "Re-run next month\n#| code-line-numbers: \"8\"\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"North East and North Cumbria\"\n  month_year: \"May 2023\""
+  },
+  {
+    "objectID": "slides/index.html#report-a-different-region",
+    "href": "slides/index.html#report-a-different-region",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Report a different region",
+    "text": "Report a different region\n#| code-line-numbers: \"7\"\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"Lancashire and South Cumbria\"\n  month_year: \"May 2023\""
+  },
+  {
+    "objectID": "slides/index.html#maria-is-happy",
+    "href": "slides/index.html#maria-is-happy",
+    "title": "The magic of automatic reporting ✨",
+    "section": "Maria is happy",
+    "text": "Maria is happy\n\n\n\nMore reproducible workflow\nFewer mistakes\nSpends less time formatting the reports manually\nSpends more time adding insight"
+  }
+]
