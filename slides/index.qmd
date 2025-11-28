@@ -1,5 +1,6 @@
 ---
-title: The magic of automatic reporting ✨ 
+title: Quarto for managers
+subtitle: The magic of automatic reporting ✨ 
 author: Rhian Davies
 format: 
   revealjs: 
@@ -7,6 +8,7 @@ format:
 execute:
     echo: true
     eval: false
+footer: "{{< fa brands github >}} {{< fa brands bluesky >}} {{< fa brands mastodon >}} {{< fa brands linkedin >}} [@statsRhian](https://bsky.app/profile/statsrhian.bsky.social) &nbsp; {{< fa laptop-code >}} [statsrhian.github.io/quarto-for-managers](https://statsrhian.github.io/quarto-for-managers)"
 ---
 
 ## Meet Maria
@@ -16,7 +18,7 @@ execute:
 ::: {.column width="60%"}
 - Public Health analyst
 - Delivers monthly reports on NHS Workforce statistics
-- Uses Excel to analyse data
+- Uses Excel & R to analyse data
 - Uses Word to write branded reports
 :::
 
@@ -44,9 +46,11 @@ execute:
 ## Back to square one
 
 ::: {.incremental}
-- The data was wrong - can you re-run the analysis?
-- Your manager loves it - can you do it for another region?
-- Next month - do it all again.
+* The data was wrong — can you re-run the analysis?
+
+* Your manager loves it — can you do it for another region?
+
+* Next month — do it all again.
 :::
 
 
@@ -64,62 +68,92 @@ execute:
 
 ![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](img/quarto-flow.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto."}
 
+## 👀 Demo: Creating a new report
+
+
+
+## 👩‍💻 Your turn: New report
+
+- Open [binder](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio) [![Launch RStudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio)
+- _File_ ➡️ _New File_ ➡️ _Quarto Document_
+- Enter _Title_ & _Author_
+- Leave _HTML_ selected
+- Click _Create_
+- Click _Render Document_ (you'll be prompted to save first)
+- Try changing some text and then re-rendering with _Render Document_
+
+# Interweave text and code 🧶
+
+## 👀 Demo: Simple plot and text
+
+
+## 👩‍💻 Your turn: New report
+
+- Open [binder](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio) [![Launch RStudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio)
+- Open `exercise-2/simple.qmd`
+- Click _Render_
+- Change `blue` to `red` and re-render
+- Change the `filter` to `> 2024-12-31` and re-render
+
+# Parameterisation ⚙️
+  
 ## Example report
 
 ![](img/ne-april.png)
 
-[statsrhian.github.io/example-quarto-report/example-report.html](https://statsrhian.github.io/example-quarto-report/example-report.html)
-
 ## Template based-reports
 
-```
+````{r params}
 #| code-line-numbers: "1-8|6-8|2-3"
 ---
-title: "NHS Workforce Statistics for `r params$ics_name`"
-subtitle: "Data for `r params$month_year`"
-author: "Maria Garcia"
-date: "2023-09-28"
+title:"NHS Workforce Statistics for `r params$ics_name`"
+subtitle:"Data for `r params$month_year`"
+author:"Maria Garcia"
+date:"2023-09-28"
 params:
-  ics_name: "North East and North Cumbria"
-  month_year: "April 2023"
+  ics_name:"North East and North Cumbria"
+  month_year:"April 2023"
 ---
-```
+````
+  
+  
+## Read in the data
+  
+````{r read-data}
+  filename
+= glue(
+  "NHS Workforce Statistics, {params$month_year} England and Organisation.xlsx"
+)
+````
 
-## Interweave text and code 🧶
+## Clean the data
 
-. . .
-
-__Read in the data__
-
-```
-filename = glue("NHS Workforce Statistics, {params$month_year} England and Organisation.xlsx")
-```
-
-. . .
-
- __Clean the data__
-
-```
+```{r clean-data}
 #| code-line-numbers: "3"
-staff_group = 
+staff_group =
   staff_group |>
   filter(`ICS name` == params$ics_name) |>
-  select(`Organisation name`, `Total`,
-         `HCHS Doctors`, `Nurses & health visitors`,
-         `Midwives`, `Ambulance staff`) 
+  select(
+    `Organisation name`,
+    `Total`,
+    `HCHS Doctors`,
+    `Nurses & health visitors`,
+    `Midwives`,
+    `Ambulance staff`
+  )
 ```
 
-. . . 
 
-__Add insight__
 
-```
+## Add insight
+
+````{r}
 The table below shows the total number of doctors and nurses for each organisation within `r params$ics_name`. We can see that the organisation with the most midwives is the `r pull(max_midwives, "Organisation name")` with `r round(max_midwives$Midwives)` staff.
-```
+````
 
 ## Re-run next month
 
-```
+````{r re-run}
 #| code-line-numbers: "8"
 ---
 title: "NHS Workforce Statistics for `r params$ics_name`"
@@ -129,13 +163,13 @@ date: "2023-09-28"
 params:
   ics_name: "North East and North Cumbria"
   month_year: "May 2023"
-```
+````
 
 ##  {background-image="img/ne-may.png"}
 
 ## Report a different region
 
-```
+````{bash}
 #| code-line-numbers: "7"
 ---
 title: "NHS Workforce Statistics for `r params$ics_name`"
@@ -145,9 +179,17 @@ date: "2023-09-28"
 params:
   ics_name: "Lancashire and South Cumbria"
   month_year: "May 2023"
-```
+````
 
 ##  {background-image="img/nw-may.png"}
+
+
+## 👩‍💻 Your turn: Parameters
+
+- Open [binder](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio) [![Launch RStudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio)
+- Open `exercise-3/example-report.qmd`
+- Change `month_year: July 2025` to `June 2025` and re-render
+- Change `ics_name: "North East and North Cumbria"` to [another ICS](https://www.england.nhs.uk/system-and-organisational-oversight/system-directory/)
 
 ## Maria is happy
 
@@ -157,7 +199,6 @@ params:
 - Fewer mistakes
 - Spends less time formatting the reports manually 
 - Spends more time adding insight
-
 :::
 
 ::: {.column width="40%"}

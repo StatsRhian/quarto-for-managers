@@ -2,5 +2,6 @@
 title: "📚 Resources"
 ---
 
-- [Download website](https://quarto.org/docs/get-started/)
+- [Hello Quarto](https://www.youtube.com/watch?v=p7Hxu4coDl8): conference talk on YouTube
+- [Download Quarto](https://quarto.org/docs/get-started/)
 - [Quarto tutorials](https://quarto.org/docs/get-started/hello/jupyter.html)

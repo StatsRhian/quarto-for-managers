@@ -4,4 +4,12 @@ title: "👩‍💻 Set up"
 
 You do not need anything install on your computer to take part in this workshop. 
 
-There are some interactive bits which can be completed by [opening this binder]().
+There are some interactive sections which can completed in binder. 
+
+[![Launch RStudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio)
+
+You may need to wait a few moments for it to load. There are two exercise folders with quarto files for you to try editing and rendering.
+
+ Thanks to [the Binder project](https://mybinder.org/) and [{holepunch} package](https://github.com/karthik/holepunch). My set-up files for binder are [on GitHub](https://github.com/StatsRhian/demo-quarto-for-managers).
+
+
