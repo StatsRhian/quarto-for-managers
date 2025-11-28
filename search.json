@@ -4,7 +4,7 @@
     "href": "resources.html",
     "title": "📚 Resources",
     "section": "",
-    "text": "Download website\nQuarto tutorials"
+    "text": "Hello Quarto: conference talk on YouTube\nDownload Quarto\nQuarto tutorials"
   },
   {
     "objectID": "index.html",
@@ -46,103 +46,152 @@
     "href": "set-up.html",
     "title": "👩‍💻 Set up",
     "section": "",
-    "text": "You do not need anything install on your computer to take part in this workshop.\nThere are some interactive bits which can be completed by opening this binder."
+    "text": "You do not need anything install on your computer to take part in this workshop.\nThere are some interactive sections which can completed in binder.\n\n\n\nLaunch RStudio Binder\n\n\nYou may need to wait a few moments for it to load. There are two exercise folders with quarto files for you to try editing and rendering.\nThanks to the Binder project and {holepunch} package. My set-up files for binder are on GitHub."
   },
   {
     "objectID": "slides/index.html#meet-maria",
     "href": "slides/index.html#meet-maria",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Meet Maria",
-    "text": "Meet Maria\n\n\n\nPublic Health analyst\nDelivers monthly reports on NHS Workforce statistics\nUses Excel to analyse data\nUses Word to write branded reports"
+    "text": "Meet Maria\n\n\n\nPublic Health analyst\nDelivers monthly reports on NHS Workforce statistics\nUses Excel & R to analyse data\nUses Word to write branded reports"
   },
   {
     "objectID": "slides/index.html#monthly-reports",
     "href": "slides/index.html#monthly-reports",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Monthly Reports",
     "text": "Monthly Reports"
   },
   {
     "objectID": "slides/index.html#monthly-reports-1",
     "href": "slides/index.html#monthly-reports-1",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Monthly Reports",
     "text": "Monthly Reports"
   },
   {
     "objectID": "slides/index.html#monthly-reports-2",
     "href": "slides/index.html#monthly-reports-2",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Monthly Reports",
     "text": "Monthly Reports"
   },
   {
     "objectID": "slides/index.html#monthly-reports-3",
     "href": "slides/index.html#monthly-reports-3",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Monthly Reports",
     "text": "Monthly Reports"
   },
   {
     "objectID": "slides/index.html#back-to-square-one",
     "href": "slides/index.html#back-to-square-one",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Back to square one",
-    "text": "Back to square one\n\nThe data was wrong - can you re-run the analysis?\nYour manager loves it - can you do it for another region?\nNext month - do it all again."
+    "text": "Back to square one\n\nThe data was wrong — can you re-run the analysis?\nYour manager loves it — can you do it for another region?\nNext month — do it all again."
   },
   {
     "objectID": "slides/index.html#what-is-quarto",
     "href": "slides/index.html#what-is-quarto",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "What is quarto?",
     "text": "What is quarto?\n\n\nAn open-source scientific and technical publishing system"
   },
   {
     "objectID": "slides/index.html#section",
     "href": "slides/index.html#section",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "",
     "text": "Artwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
+    "objectID": "slides/index.html#demo-creating-a-new-report",
+    "href": "slides/index.html#demo-creating-a-new-report",
+    "title": "Quarto for managers",
+    "section": "👀 Demo: Creating a new report",
+    "text": "👀 Demo: Creating a new report"
+  },
+  {
+    "objectID": "slides/index.html#your-turn-new-report",
+    "href": "slides/index.html#your-turn-new-report",
+    "title": "Quarto for managers",
+    "section": "👩‍💻 Your turn: New report",
+    "text": "👩‍💻 Your turn: New report\n\nOpen binder \nFile ➡️ New File ➡️ Quarto Document\nEnter Title & Author\nLeave HTML selected\nClick Create\nClick Render Document (you’ll be prompted to save first)\nTry changing some text and then re-rendering with Render Document"
+  },
+  {
+    "objectID": "slides/index.html#demo-simple-plot-and-text",
+    "href": "slides/index.html#demo-simple-plot-and-text",
+    "title": "Quarto for managers",
+    "section": "👀 Demo: Simple plot and text",
+    "text": "👀 Demo: Simple plot and text"
+  },
+  {
+    "objectID": "slides/index.html#your-turn-new-report-1",
+    "href": "slides/index.html#your-turn-new-report-1",
+    "title": "Quarto for managers",
+    "section": "👩‍💻 Your turn: New report",
+    "text": "👩‍💻 Your turn: New report\n\nOpen binder \nOpen exercise-2/simple.qmd\nClick Render\nChange blue to red and re-render\nChange the filter to &gt; 2024-12-31 and re-render"
+  },
+  {
     "objectID": "slides/index.html#example-report",
     "href": "slides/index.html#example-report",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Example report",
-    "text": "Example report\n\nstatsrhian.github.io/example-quarto-report/example-report.html"
+    "text": "Example report"
   },
   {
     "objectID": "slides/index.html#template-based-reports",
     "href": "slides/index.html#template-based-reports",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Template based-reports",
-    "text": "Template based-reports\n#| code-line-numbers: \"1-8|6-8|2-3\"\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"North East and North Cumbria\"\n  month_year: \"April 2023\"\n---"
+    "text": "Template based-reports\n\n---\ntitle:\"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle:\"Data for `r params$month_year`\"\nauthor:\"Maria Garcia\"\ndate:\"2023-09-28\"\nparams:\n  ics_name:\"North East and North Cumbria\"\n  month_year:\"April 2023\"\n---"
   },
   {
-    "objectID": "slides/index.html#interweave-text-and-code",
-    "href": "slides/index.html#interweave-text-and-code",
-    "title": "The magic of automatic reporting ✨",
-    "section": "Interweave text and code 🧶",
-    "text": "Interweave text and code 🧶\n\nRead in the data\nfilename = glue(\"NHS Workforce Statistics, {params$month_year} England and Organisation.xlsx\")\n\n\nClean the data\n#| code-line-numbers: \"3\"\nstaff_group = \n  staff_group |&gt;\n  filter(`ICS name` == params$ics_name) |&gt;\n  select(`Organisation name`, `Total`,\n         `HCHS Doctors`, `Nurses & health visitors`,\n         `Midwives`, `Ambulance staff`) \n\n\nAdd insight\nThe table below shows the total number of doctors and nurses for each organisation within `r params$ics_name`. We can see that the organisation with the most midwives is the `r pull(max_midwives, \"Organisation name\")` with `r round(max_midwives$Midwives)` staff."
+    "objectID": "slides/index.html#read-in-the-data",
+    "href": "slides/index.html#read-in-the-data",
+    "title": "Quarto for managers",
+    "section": "Read in the data",
+    "text": "Read in the data\n\n  filename\n= glue(\n  \"NHS Workforce Statistics, {params$month_year} England and Organisation.xlsx\"\n)"
+  },
+  {
+    "objectID": "slides/index.html#clean-the-data",
+    "href": "slides/index.html#clean-the-data",
+    "title": "Quarto for managers",
+    "section": "Clean the data",
+    "text": "Clean the data\n\nstaff_group =\n  staff_group |&gt;\n  filter(`ICS name` == params$ics_name) |&gt;\n  select(\n    `Organisation name`,\n    `Total`,\n    `HCHS Doctors`,\n    `Nurses & health visitors`,\n    `Midwives`,\n    `Ambulance staff`\n  )"
+  },
+  {
+    "objectID": "slides/index.html#add-insight",
+    "href": "slides/index.html#add-insight",
+    "title": "Quarto for managers",
+    "section": "Add insight",
+    "text": "Add insight\n\nThe table below shows the total number of doctors and nurses for each organisation within `r params$ics_name`. We can see that the organisation with the most midwives is the `r pull(max_midwives, \"Organisation name\")` with `r round(max_midwives$Midwives)` staff."
   },
   {
     "objectID": "slides/index.html#re-run-next-month",
     "href": "slides/index.html#re-run-next-month",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Re-run next month",
-    "text": "Re-run next month\n#| code-line-numbers: \"8\"\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"North East and North Cumbria\"\n  month_year: \"May 2023\""
+    "text": "Re-run next month\n\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"North East and North Cumbria\"\n  month_year: \"May 2023\""
   },
   {
     "objectID": "slides/index.html#report-a-different-region",
     "href": "slides/index.html#report-a-different-region",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Report a different region",
-    "text": "Report a different region\n#| code-line-numbers: \"7\"\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"Lancashire and South Cumbria\"\n  month_year: \"May 2023\""
+    "text": "Report a different region\n\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"Lancashire and South Cumbria\"\n  month_year: \"May 2023\""
+  },
+  {
+    "objectID": "slides/index.html#your-turn-parameters",
+    "href": "slides/index.html#your-turn-parameters",
+    "title": "Quarto for managers",
+    "section": "👩‍💻 Your turn: Parameters",
+    "text": "👩‍💻 Your turn: Parameters\n\nOpen binder \nOpen exercise-3/example-report.qmd\nChange month_year: July 2025 to June 2025 and re-render\nChange ics_name: \"North East and North Cumbria\" to another ICS"
   },
   {
     "objectID": "slides/index.html#maria-is-happy",
     "href": "slides/index.html#maria-is-happy",
-    "title": "The magic of automatic reporting ✨",
+    "title": "Quarto for managers",
     "section": "Maria is happy",
     "text": "Maria is happy\n\n\n\nMore reproducible workflow\nFewer mistakes\nSpends less time formatting the reports manually\nSpends more time adding insight"
   }
