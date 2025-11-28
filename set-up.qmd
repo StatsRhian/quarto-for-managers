@@ -6,7 +6,9 @@ You do not need anything install on your computer to take part in this workshop.
 
 There are some interactive sections which can completed in binder. 
 
-[![Launch RStudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio)
+<a href="https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio" target="_blank">
+    <img src="http://mybinder.org/badge_logo.svg" alt="Launch RStudio Binder">
+</a>
 
 You may need to wait a few moments for it to load. There are two exercise folders with quarto files for you to try editing and rendering.
 

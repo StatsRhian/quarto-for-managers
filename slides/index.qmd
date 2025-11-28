@@ -5,6 +5,7 @@ author: Rhian Davies
 format: 
   revealjs: 
     self-contained: true
+engine: markdown
 execute:
     echo: true
     eval: false
@@ -74,7 +75,10 @@ footer: "{{< fa brands github >}} {{< fa brands bluesky >}} {{< fa brands mastod
 
 ## 👩‍💻 Your turn: New report
 
-- Open [binder](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio) [![Launch RStudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio)
+- Open <a href="https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio" target="_blank">binder</a>
+  <a href="https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio" target="_blank">
+    <img src="http://mybinder.org/badge_logo.svg" alt="Launch RStudio Binder">
+  </a>
 - _File_ ➡️ _New File_ ➡️ _Quarto Document_
 - Enter _Title_ & _Author_
 - Leave _HTML_ selected
@@ -89,7 +93,10 @@ footer: "{{< fa brands github >}} {{< fa brands bluesky >}} {{< fa brands mastod
 
 ## 👩‍💻 Your turn: New report
 
-- Open [binder](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio) [![Launch RStudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio)
+- Open <a href="https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio" target="_blank">binder</a>
+  <a href="https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio" target="_blank">
+    <img src="http://mybinder.org/badge_logo.svg" alt="Launch RStudio Binder">
+  </a>
 - Open `exercise-2/simple.qmd`
 - Click _Render_
 - Change `blue` to `red` and re-render
@@ -186,7 +193,10 @@ params:
 
 ## 👩‍💻 Your turn: Parameters
 
-- Open [binder](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio) [![Launch RStudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio)
+- Open <a href="https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio" target="_blank">binder</a>
+  <a href="https://mybinder.org/v2/gh/StatsRhian/demo-quarto-for-managers/main?urlpath=rstudio" target="_blank">
+    <img src="http://mybinder.org/badge_logo.svg" alt="Launch RStudio Binder">
+  </a>
 - Open `exercise-3/example-report.qmd`
 - Change `month_year: July 2025` to `June 2025` and re-render
 - Change `ics_name: "North East and North Cumbria"` to [another ICS](https://www.england.nhs.uk/system-and-organisational-oversight/system-directory/)
