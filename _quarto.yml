@@ -8,6 +8,7 @@ website:
       - index.qmd
       - slides.qmd
       - set-up.qmd
+      - faqs.qmd
       - resources.qmd 
     tools:
       - icon: github

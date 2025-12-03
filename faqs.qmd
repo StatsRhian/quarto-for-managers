@@ -1,0 +1,26 @@
+---
+title: "❓ FAQs"
+---
+
+Coming soon! A few notes following questions we got at the workshop
+
+
+## What are the pros and cons for .HTML files?
+
+## How do I stop the code appearing in my reports
+
+Set `#| echo: false` at the top of your code chunk
+
+## How can I add alt text to my plots?
+
+Use `#| fig-alt="Informative alt text describing the plot"` at the top of your code chunk
+
+## If moving from RMkarkdown to Quarto - what are key differences to be aware of?
+
+## How can I brand my reports>
+
+- [brand.yml](https://posit-dev.github.io/brand-yml/)
+
+## Is it possible to do something clever with this where a user could choose from a dropdown list and have the report re-render?
+
+## Can I run the parameterisation for every possible option?
