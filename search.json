@@ -7,48 +7,6 @@
     "text": "Hello Quarto: conference talk on YouTube\nDownload Quarto\nQuarto tutorials"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "👋 Welcome",
-    "section": "",
-    "text": "Meet Maria, a public health analyst who produces monthly NHS workforce reports. She crunches data in Excel, writes reports in Word, and spends hours formatting tables and charts. When the data changes or her manager requests a new region, she has to start over again.\nIn this hands-on workshop, we’ll show how Quarto and parameterised, template-based reporting can transform workflows like Maria’s. Participants will see how analysts can interweave text and code to produce reproducible, automated reports that are easier to update, reduce mistakes, and free up time for insight and decision-making.\nThrough a short practical exercise, managers will get a glimpse of the technology, see its benefits in action, and understand how investing in reproducible reporting can improve efficiency, consistency, and the impact of analytical work across health and care teams."
-  },
-  {
-    "objectID": "index.html#workshop-outline",
-    "href": "index.html#workshop-outline",
-    "title": "👋 Welcome",
-    "section": "",
-    "text": "Meet Maria, a public health analyst who produces monthly NHS workforce reports. She crunches data in Excel, writes reports in Word, and spends hours formatting tables and charts. When the data changes or her manager requests a new region, she has to start over again.\nIn this hands-on workshop, we’ll show how Quarto and parameterised, template-based reporting can transform workflows like Maria’s. Participants will see how analysts can interweave text and code to produce reproducible, automated reports that are easier to update, reduce mistakes, and free up time for insight and decision-making.\nThrough a short practical exercise, managers will get a glimpse of the technology, see its benefits in action, and understand how investing in reproducible reporting can improve efficiency, consistency, and the impact of analytical work across health and care teams."
-  },
-  {
-    "objectID": "index.html#learning-objectives",
-    "href": "index.html#learning-objectives",
-    "title": "👋 Welcome",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of the session, attendees will\n\nunderstand the benefits of Quarto\nhave an understanding of if Quarto could help their team\nhave built their own basic report"
-  },
-  {
-    "objectID": "index.html#prerequisites",
-    "href": "index.html#prerequisites",
-    "title": "👋 Welcome",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nThis workshop is aimed at managers. No prior coding or Quarto experience necessary at all."
-  },
-  {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "👩‍🏫 Slides",
-    "section": "",
-    "text": "🔍 View full-size"
-  },
-  {
-    "objectID": "set-up.html",
-    "href": "set-up.html",
-    "title": "👩‍💻 Set up",
-    "section": "",
-    "text": "You do not need anything install on your computer to take part in this workshop.\nThere are some interactive sections which can completed in binder.\n  \nYou may need to wait a few moments for it to load. There are two exercise folders with quarto files for you to try editing and rendering.\nThanks to the Binder project and {holepunch} package. My set-up files for binder are on GitHub."
-  },
-  {
     "objectID": "slides/index.html#meet-maria",
     "href": "slides/index.html#meet-maria",
     "title": "Quarto for managers",
@@ -194,5 +152,103 @@
     "title": "Quarto for managers",
     "section": "Maria is happy",
     "text": "Maria is happy\n\n\n\nMore reproducible workflow\nFewer mistakes\nSpends less time formatting the reports manually\nSpends more time adding insight"
+  },
+  {
+    "objectID": "set-up.html",
+    "href": "set-up.html",
+    "title": "👩‍💻 Set up",
+    "section": "",
+    "text": "You do not need anything install on your computer to take part in this workshop.\nThere are some interactive sections which can completed in binder.\n  \nYou may need to wait a few moments for it to load. There are two exercise folders with quarto files for you to try editing and rendering.\nThanks to the Binder project and {holepunch} package. My set-up files for binder are on GitHub."
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "👩‍🏫 Slides",
+    "section": "",
+    "text": "🔍 View full-size"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "👋 Welcome",
+    "section": "",
+    "text": "Meet Maria, a public health analyst who produces monthly NHS workforce reports. She crunches data in Excel, writes reports in Word, and spends hours formatting tables and charts. When the data changes or her manager requests a new region, she has to start over again.\nIn this hands-on workshop, we’ll show how Quarto and parameterised, template-based reporting can transform workflows like Maria’s. Participants will see how analysts can interweave text and code to produce reproducible, automated reports that are easier to update, reduce mistakes, and free up time for insight and decision-making.\nThrough a short practical exercise, managers will get a glimpse of the technology, see its benefits in action, and understand how investing in reproducible reporting can improve efficiency, consistency, and the impact of analytical work across health and care teams."
+  },
+  {
+    "objectID": "index.html#workshop-outline",
+    "href": "index.html#workshop-outline",
+    "title": "👋 Welcome",
+    "section": "",
+    "text": "Meet Maria, a public health analyst who produces monthly NHS workforce reports. She crunches data in Excel, writes reports in Word, and spends hours formatting tables and charts. When the data changes or her manager requests a new region, she has to start over again.\nIn this hands-on workshop, we’ll show how Quarto and parameterised, template-based reporting can transform workflows like Maria’s. Participants will see how analysts can interweave text and code to produce reproducible, automated reports that are easier to update, reduce mistakes, and free up time for insight and decision-making.\nThrough a short practical exercise, managers will get a glimpse of the technology, see its benefits in action, and understand how investing in reproducible reporting can improve efficiency, consistency, and the impact of analytical work across health and care teams."
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "👋 Welcome",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of the session, attendees will\n\nunderstand the benefits of Quarto\nhave an understanding of if Quarto could help their team\nhave built their own basic report"
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "👋 Welcome",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nThis workshop is aimed at managers. No prior coding or Quarto experience necessary at all."
+  },
+  {
+    "objectID": "faqs.html",
+    "href": "faqs.html",
+    "title": "❓ FAQs",
+    "section": "",
+    "text": "Coming soon! A few notes following questions we got at the workshop"
+  },
+  {
+    "objectID": "faqs.html#what-are-the-pros-and-cons-for-.html-files",
+    "href": "faqs.html#what-are-the-pros-and-cons-for-.html-files",
+    "title": "❓ FAQs",
+    "section": "What are the pros and cons for .HTML files?",
+    "text": "What are the pros and cons for .HTML files?"
+  },
+  {
+    "objectID": "faqs.html#how-do-i-stop-the-code-appearing-in-my-reports",
+    "href": "faqs.html#how-do-i-stop-the-code-appearing-in-my-reports",
+    "title": "❓ FAQs",
+    "section": "How do I stop the code appearing in my reports",
+    "text": "How do I stop the code appearing in my reports\nSet #| echo: false at the top of your code chunk"
+  },
+  {
+    "objectID": "faqs.html#how-can-i-add-alt-text-to-my-plots",
+    "href": "faqs.html#how-can-i-add-alt-text-to-my-plots",
+    "title": "❓ FAQs",
+    "section": "How can I add alt text to my plots?",
+    "text": "How can I add alt text to my plots?\nUse #| fig-alt=\"Informative alt text describing the plot\" at the top of your code chunk"
+  },
+  {
+    "objectID": "faqs.html#if-moving-from-rmkarkdown-to-quarto---what-are-key-differences-to-be-aware-of",
+    "href": "faqs.html#if-moving-from-rmkarkdown-to-quarto---what-are-key-differences-to-be-aware-of",
+    "title": "❓ FAQs",
+    "section": "If moving from RMkarkdown to Quarto - what are key differences to be aware of?",
+    "text": "If moving from RMkarkdown to Quarto - what are key differences to be aware of?"
+  },
+  {
+    "objectID": "faqs.html#how-can-i-brand-my-reports",
+    "href": "faqs.html#how-can-i-brand-my-reports",
+    "title": "❓ FAQs",
+    "section": "How can I brand my reports>",
+    "text": "How can I brand my reports&gt;\n\nbrand.yml"
+  },
+  {
+    "objectID": "faqs.html#is-it-possible-to-do-something-clever-with-this-where-a-user-could-choose-from-a-dropdown-list-and-have-the-report-re-render",
+    "href": "faqs.html#is-it-possible-to-do-something-clever-with-this-where-a-user-could-choose-from-a-dropdown-list-and-have-the-report-re-render",
+    "title": "❓ FAQs",
+    "section": "Is it possible to do something clever with this where a user could choose from a dropdown list and have the report re-render?",
+    "text": "Is it possible to do something clever with this where a user could choose from a dropdown list and have the report re-render?"
+  },
+  {
+    "objectID": "faqs.html#can-i-run-the-parameterisation-for-every-possible-option",
+    "href": "faqs.html#can-i-run-the-parameterisation-for-every-possible-option",
+    "title": "❓ FAQs",
+    "section": "Can I run the parameterisation for every possible option?",
+    "text": "Can I run the parameterisation for every possible option?"
   }
 ]
