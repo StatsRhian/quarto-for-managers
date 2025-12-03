@@ -144,42 +144,42 @@
     "href": "slides/index.html#template-based-reports",
     "title": "Quarto for managers",
     "section": "Template based-reports",
-    "text": "Template based-reports\n#| code-line-numbers: \"1-8|6-8|2-3\"\n---\ntitle:\"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle:\"Data for `r params$month_year`\"\nauthor:\"Maria Garcia\"\ndate:\"2023-09-28\"\nparams:\n  ics_name:\"North East and North Cumbria\"\n  month_year:\"April 2023\"\n---"
+    "text": "Template based-reports\n\n---\ntitle:\"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle:\"Data for `r params$month_year`\"\nauthor:\"Maria Garcia\"\ndate:\"2023-09-28\"\nparams:\n  ics_name:\"North East and North Cumbria\"\n  month_year:\"April 2023\"\n---"
   },
   {
     "objectID": "slides/index.html#read-in-the-data",
     "href": "slides/index.html#read-in-the-data",
     "title": "Quarto for managers",
     "section": "Read in the data",
-    "text": "Read in the data\n  filename\n= glue(\n  \"NHS Workforce Statistics, {params$month_year} England and Organisation.xlsx\"\n)"
+    "text": "Read in the data\n\n  filename\n= glue(\n  \"NHS Workforce Statistics, {params$month_year} England and Organisation.xlsx\"\n)"
   },
   {
     "objectID": "slides/index.html#clean-the-data",
     "href": "slides/index.html#clean-the-data",
     "title": "Quarto for managers",
     "section": "Clean the data",
-    "text": "Clean the data\n#| code-line-numbers: \"3\"\nstaff_group =\n  staff_group |&gt;\n  filter(`ICS name` == params$ics_name) |&gt;\n  select(\n    `Organisation name`,\n    `Total`,\n    `HCHS Doctors`,\n    `Nurses & health visitors`,\n    `Midwives`,\n    `Ambulance staff`\n  )"
+    "text": "Clean the data\n\nstaff_group =\n  staff_group |&gt;\n  filter(`ICS name` == params$ics_name) |&gt;\n  select(\n    `Organisation name`,\n    `Total`,\n    `HCHS Doctors`,\n    `Nurses & health visitors`,\n    `Midwives`,\n    `Ambulance staff`\n  )"
   },
   {
     "objectID": "slides/index.html#add-insight",
     "href": "slides/index.html#add-insight",
     "title": "Quarto for managers",
     "section": "Add insight",
-    "text": "Add insight\nThe table below shows the total number of doctors and nurses for each organisation within `r params$ics_name`. We can see that the organisation with the most midwives is the `r pull(max_midwives, \"Organisation name\")` with `r round(max_midwives$Midwives)` staff."
+    "text": "Add insight\n\nThe table below shows the total number of doctors and nurses for each organisation within `r params$ics_name`. We can see that the organisation with the most midwives is the `r pull(max_midwives, \"Organisation name\")` with `r round(max_midwives$Midwives)` staff."
   },
   {
     "objectID": "slides/index.html#re-run-next-month",
     "href": "slides/index.html#re-run-next-month",
     "title": "Quarto for managers",
     "section": "Re-run next month",
-    "text": "Re-run next month\n#| code-line-numbers: \"8\"\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"North East and North Cumbria\"\n  month_year: \"May 2023\""
+    "text": "Re-run next month\n\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"North East and North Cumbria\"\n  month_year: \"May 2023\""
   },
   {
     "objectID": "slides/index.html#report-a-different-region",
     "href": "slides/index.html#report-a-different-region",
     "title": "Quarto for managers",
     "section": "Report a different region",
-    "text": "Report a different region\n#| code-line-numbers: \"7\"\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"Lancashire and South Cumbria\"\n  month_year: \"May 2023\""
+    "text": "Report a different region\n\n---\ntitle: \"NHS Workforce Statistics for `r params$ics_name`\"\nsubtitle: \"Data for `r params$month_year`\"\nauthor: \"Maria Garcia\"\ndate: \"2023-09-28\"\nparams:\n  ics_name: \"Lancashire and South Cumbria\"\n  month_year: \"May 2023\""
   },
   {
     "objectID": "slides/index.html#your-turn-parameters",
