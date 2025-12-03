@@ -5,7 +5,6 @@ author: Rhian Davies
 format: 
   revealjs: 
     self-contained: true
-engine: markdown
 execute:
     echo: true
     eval: false
@@ -110,7 +109,7 @@ footer: "{{< fa brands github >}} {{< fa brands bluesky >}} {{< fa brands mastod
 
 ## Template based-reports
 
-````{r params}
+```{r}
 #| code-line-numbers: "1-8|6-8|2-3"
 ---
 title:"NHS Workforce Statistics for `r params$ics_name`"
@@ -121,21 +120,22 @@ params:
   ics_name:"North East and North Cumbria"
   month_year:"April 2023"
 ---
-````
-  
+```
+
+
   
 ## Read in the data
   
-````{r read-data}
+```{r read-data}
   filename
 = glue(
   "NHS Workforce Statistics, {params$month_year} England and Organisation.xlsx"
 )
-````
+```
 
 ## Clean the data
 
-```{r clean-data}
+```{r}
 #| code-line-numbers: "3"
 staff_group =
   staff_group |>
